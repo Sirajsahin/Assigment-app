@@ -1,15 +1,15 @@
 
 import './App.css';
-import { useEffect, useState } from 'react';
-import _ from "lodash";
+import React from 'react';
 import UserTable from './Component/UserTable';
-import User  from './Component/User';
+// import User  from './Component/User';
 
 function App() {
-  const [flage,setFlage]=useState(false)
+  // const [flage,setFlage]=useState(false)
   return(
     <div className='App'>
-      {flage?<User/>:<UserTable/>}
+      {/* {flage?null:<UserTable/>} */}
+      <UserTable/>
     </div>
   )
 }
